@@ -2,26 +2,38 @@
 <html lang="en">
   <head>
     <title>Homepage</title>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu'rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway'rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Otomanopee+One'rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro'rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <header id = "myHeader">
-      <h1>Scrappy</h1>
       <nav>
+        <div>
           <ul class = "nav_links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about-us.html">Our Team</a></li>
-              <li><a href="#">Download</a></li>
+              <li><img src="ScrappyLogo+text(3).png" alt = "Logo" style= "width:20%; margin-top: 10px;
+                margin-right: 120px; padding-top: -10px;"></li>
+              <li><a href="index.html" style='font-family:Poppins'>Home</a></li>
+              <li><a href="about-us.html" style='font-family:Poppins'>Our Team</a></li>
+              <li><a href="#" style='font-family:Poppins'>Download</a></li>
           </ul>
+        </div>
       </nav>
+
+
     </header>
+
     <script>
       window.onscroll = function() {myFunction()};
-      
+
       var header = document.getElementById("myHeader");
       var sticky = header.offsetTop;
-      
+
       function myFunction() {
         if (window.pageYOffset > sticky) {
           header.classList.add("sticky");
@@ -30,8 +42,43 @@
         }
       }
       </script>
+
+
     <div class = "head">
-      <h4>Something here lol</h4>
+      <!--
+        <img src="ScrappyLogo(2).png" alt = "Another Logo" style="width:15%;margin-bottom:-20px"><br><br>
+      -->
+
+      <div class="overlay">
+        <h4 style='font-family:Ubuntu; font-size:50px;'>It's never been easier to make a difference</h4><br>
+        <p style='font-family:Ubuntu; font-size:30px;'>Scrappy is your guide to all things composting.</p>
+      </div>
+
+      <video autoplay muted loop>
+        <source src="pexels-kelly-lacy-6160039.mp4" type="video/mp4">
+      </video>
+
+      <!--
+      <div class="content">
+        <h4 style='font-family:Ubuntu; color:#a9a9a9; font-size: 52px; padding-bottom: 10px;'>It's never been easier to make a difference</h4>
+        <p style='font-family:Ubuntu; color:#a9a9a9; font-size: 26px;'>Scrappy is your guide to all things composting.</p>
+      </div>
+    -->
+  </div><br>
+
+  <div style="background-color:#73AD21;">
+    <h2>So what exactly is
+      <span style="color:white;">composting</span>
+      <span>?</span>
+    </h2><br>
+
+    <p id="rcorners" style="color:white;font-size:20px;font-family: Source Sans Pro;">Composting is the natural process of recycling organic matter, such as leaves and food scraps, into a valuable fertilizer that can enrich soil and plants. With this process, some of the benefits that compost presents include higher crop yield and reduced greenhouse emissions.
+    According to the EPA, roughly 4.1 percent of total organic waste was composted, while the rest went to landfills. The organic waste in landfills generates methane, a greenhouse gas that is the second-largest contributor to the global warming crisis and has eighty times the warming power compared to carbon dioxide per unit of mass.</p>
+    <br>
+    <img src= "Home Screen.png" style="width:15%; display: list-item; margin-left: auto; margin-right: auto;">
+    <img src= "Home Screen.png" style="width:15%; display: list-item; margin-left: auto; margin-right: auto;">
+    <p id="rcorners" style="color:white;font-size:20px;font-family: Source Sans Pro;"> Scrappy provides the location of </p>
   </div>
+
   </body>
 </html>
