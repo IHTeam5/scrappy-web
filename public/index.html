@@ -12,21 +12,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <header id = "myHeader">
-      <nav>
-        <div>
-          <ul class = "nav_links">
-              <li><img src="ScrappyLogo+text(3).png" alt = "Logo" style= "width:20%; margin-top: 10px;
-                margin-right: 120px; padding-top: -10px;"></li>
-              <li><a href="index.html" style='font-family:Poppins'>Home</a></li>
-              <li><a href="about-us.html" style='font-family:Poppins'>Our Team</a></li>
-              <li><a href="#" style='font-family:Poppins'>Download</a></li>
-          </ul>
-        </div>
-      </nav>
+    <div>
+      <header id = "myHeader">
+        <nav>
+          <div>
+            <ul class = "nav_links">
+                <li><img src="ScrappyLogo+text(3).png" alt = "Logo" style= "width:20%; margin-top: 10px;
+                  margin-right: 120px; padding-top: -10px;"></li>
+                <li><a href="index.html" style='font-family:Poppins'>Home</a></li>
+                <li><a href="about-us.html" style='font-family:Poppins'>Our Team</a></li>
+                <li><a href="#" style='font-family:Poppins'>Download</a></li>
+            </ul>
+          </div>
+        </nav>
 
 
-    </header>
+      </header>
+    </div>
 
     <script>
       window.onscroll = function() {myFunction()};
@@ -48,15 +50,18 @@
       <!--
         <img src="ScrappyLogo(2).png" alt = "Another Logo" style="width:15%;margin-bottom:-20px"><br><br>
       -->
-
+      <div>
+        <video autoplay muted loop>
+          <source src="pexels-kelly-lacy-6160039_Trim4.mp4" type="video/mp4">
+        </video>
+      </div>
       <div class="overlay">
-        <h4 style='font-family:Ubuntu; font-size:50px;'>It's never been easier to make a difference</h4><br>
-        <p style='font-family:Ubuntu; font-size:30px;'>Scrappy is your guide to all things composting.</p>
+        <h4>It's never been easier to make a difference</h4>
+        <p>Scrappy is your guide to all things composting.</p>
       </div>
 
-      <video autoplay muted loop>
-        <source src="pexels-kelly-lacy-6160039_Trim4.mp4" type="video/mp4">
-      </video>
+
+
 
       <!--
       <div class="content">
@@ -75,10 +80,42 @@
     <p id="rcorners" style="color:white;font-size:20px;font-family: Source Sans Pro;">Composting is the natural process of recycling organic matter, such as leaves and food scraps, into a valuable fertilizer that can enrich soil and plants. With this process, some of the benefits that compost presents include higher crop yield and reduced greenhouse emissions.
     According to the EPA, roughly 4.1 percent of total organic waste was composted, while the rest went to landfills. The organic waste in landfills generates methane, a greenhouse gas that is the second-largest contributor to the global warming crisis and has eighty times the warming power compared to carbon dioxide per unit of mass.</p>
     <br>
-    <img src= "Home Screen.png" style="width:15%; display: list-item; margin-left: auto; margin-right: auto;">
-    <img src= "Home Screen.png" style="width:15%; display: list-item; margin-left: auto; margin-right: auto;">
+
+
+    <div class="row">
+      <div class="feature-row">
+        <div class="feature-column">
+          <img src="location.png" style="width:3%; margin-left: auto; margin-right: auto;">
+          <img src="favourite.png" style="width:4%; margin-left:auto;margin-right:auto;">
+          <img src="friends.png" style="width:4%; margin-left: auto; margin-right: auto;">
+          <img src="chat.png" style="width:4%; margin-left: auto; margin-right: auto;">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="Home Screen.png" style="width:30%; margin-left: auto; margin-right: auto;">
+        <img src="Community.png" style="width:30%; margin-left: auto; margin-right: auto;">
+      </div>
+      <div class="column">
+        <img src="Camera.png" style="width:30%; margin-left: auto; margin-right: auto;">
+        <img src="User Profile.png" style="width:30%; margin-left: auto; margin-right: auto;">
+      </div>
+
+    </div>
+
+
     <p id="rcorners" style="color:white;font-size:20px;font-family: Source Sans Pro;"> Scrappy provides the location of </p>
+    <button class="button">Try for free</button>
   </div>
 
   </body>
+
+  <footer style = "background-color:white">
+    <img src="ScrappyLogo.png" style="width:10%;margin-top:1px;">
+    <p style="font-size:12px;font-family:Ubuntu;text-align:center;">Copyright (c) Scrappy </p>
+
+  </footer>
 </html>
