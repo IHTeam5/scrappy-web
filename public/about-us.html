@@ -4,24 +4,31 @@
         <title>Our Team</title>
         <meta charset="utf-8">
         <link href="style.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu'rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro'rel='stylesheet'>
     </head>
     <body>
-        <header id = "myHeader">
-            <h1>Scrappy</h1>
-            <nav>
-                <ul class = "nav_links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">Our Team</a></li>
-                    <li><a href="#">Download</a></li>
-                </ul>
-            </nav>
-          </header>
+      <header id = "myHeader">
+        <nav>
+          <div>
+            <ul class = "nav_links">
+                <li><a href="index.html"><img src="ScrappyLogo+text(3).png" alt = "Logo" style= "width:20%; margin-top: 10px;
+                  margin-right: 120px; padding-top: -10px;"></a></li>
+                <li><a href="index.html" style='font-family:Poppins'>Home</a></li>
+                <li><a href="about-us.html" style='font-family:Poppins'>Our Team</a></li>
+                <li><a href="contact-us.html" style='font-family:Poppins'>Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+
+
+      </header>
           <script>
             window.onscroll = function() {myFunction()};
-            
+
             var header = document.getElementById("myHeader");
             var sticky = header.offsetTop;
-            
+
             function myFunction() {
               if (window.pageYOffset > sticky) {
                 header.classList.add("sticky");
@@ -30,76 +37,87 @@
               }
             }
             </script>
-        <div class = "head">
-            <h4>Our Team</h4>
+        <div>
+            <h4 style="text-align:center;padding:40px;font-size:70px;font-family:Ubuntu;">Our Team</h4>
+            <img src="Scrappy-about-us.png" alt="Scrappy Logo" class="center-logo">
         </div>
 
-        <div class="row">
-            <div class="column">
-                <img src="images/meelod_headshot.JPG" alt="Meelod" 
-                style="width:100%">
-                <h4>Meelod Waheed</h4>
-                <p>Product Manager</p>
-                <p>Meelod Waheed is a first-generation Afghan-American at Northern Virginia Community
-                    College (NVCC). He is currently studying computer science, concentrating on Machine Learning
-                    research and optimization. After NVCC, he hopes to transfer into a top-twenty four-year university to continue pursuing Machine Learning and eventually get into computer vision and creative artificial intelligence.
-                    At NVCC, he currently serves as the President of the Phi Theta Kappa chapter, President of the STEAM Club, President of the Cloud Computing Club, and President of the Personal Finance Club. He is also a part of numerous other clubs and organizations at NVCC.
-                    He is the Head of Web Development and Design at The Caring Consultants. His role involves designing and maintaining the website with AWS, increasing their online presence, and
-                    editing/producing podcast episodes. After graduating, he hopes to become a Machine Learning engineer and start his own artificial intelligence firm.
-                    </p>
-            </div>
-            <div class="column">
-                <img src="images/meelod_headshot.JPG" alt="Meelod" 
-                style="width:100%">
-                <h4>Olufunke Ogunmefun</h4>
-                <p>Designer</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra 
-                    ullamcorper venenatis. Ut vitae mattis velit. Nam eu felis in dolor interdum 
-                    dapibus eget a sem. Vestibulum ut varius dui. Nunc eros diam, faucibus vitae lacinia ac, 
-                    blandit at mauris. Donec at suscipit metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-                    per inceptos himenaeos. Aenean massa lacus, venenatis quis bibendum ut, vehicula quis nulla.
-                     Proin cursus vitae mi sit amet feugiat.
+        <div id="rcorners">
+        <div class="bio-container">
+              <div class="profile">
+                <img src="meelod_headshot.JPG" alt="Meelod Waheed" style="width:300%;padding-left:20px;padding-top:20px;padding-bottom:20px;">
+              </div>
+              <div class="bio">
+                <h4 style="font-family:Ubuntu;font-size:40px;padding-bottom:5px;color:white;">Meelod Waheed</h4>
+                <p style="font-family:Ubuntu;font-size:15px;">Product Manager</p><br>
+                <p style="font-family:Source Sans Pro;font-size:15px;">Meelod Waheed is a first-generation Afghan-American at Northern Virginia Community
+                  College (NVCC). He is currently studying computer science, concentrating on Machine Learning
+                  research and optimization. After NVCC, he hopes to transfer into a top-twenty four-year university to continue pursuing Machine Learning and eventually get into computer vision and creative artificial intelligence.
+                  At NVCC, he currently serves as the President of the Phi Theta Kappa chapter, President of the STEAM Club, President of the Cloud Computing Club, and President of the Personal Finance Club. He is also a part of numerous other clubs and organizations at NVCC.
+                  He is the Head of Web Development and Design at The Caring Consultants. His role involves designing and maintaining the website with AWS, increasing their online presence, and
+                  editing/producing podcast episodes. After graduating, he hopes to become a Machine Learning engineer and start his own artificial intelligence firm.
                 </p>
-            </div>
-            <div class="column">
-                <img src="images/meelod_headshot.JPG" alt="Meelod" 
-                style="width:100%">
-                <h4>Stephanie Organista</h4>
-                <p>Software Engineer</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra 
-                    ullamcorper venenatis. Ut vitae mattis velit. Nam eu felis in dolor interdum 
-                    dapibus eget a sem. Vestibulum ut varius dui. Nunc eros diam, faucibus vitae lacinia ac, 
-                    blandit at mauris. Donec at suscipit metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-                    per inceptos himenaeos. Aenean massa lacus, venenatis quis bibendum ut, vehicula quis nulla.
-                     Proin cursus vitae mi sit amet feugiat.
-                </p>
-            </div>
-            <div class="column">
-                <img src="images/meelod_headshot.JPG" alt="Meelod" 
-                style="width:100%">
-                <h4>Olisehemeka Chukwuma</h4>
-                <p>Software Engineer</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra 
-                    ullamcorper venenatis. Ut vitae mattis velit. Nam eu felis in dolor interdum 
-                    dapibus eget a sem. Vestibulum ut varius dui. Nunc eros diam, faucibus vitae lacinia ac, 
-                    blandit at mauris. Donec at suscipit metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-                    per inceptos himenaeos. Aenean massa lacus, venenatis quis bibendum ut, vehicula quis nulla.
-                     Proin cursus vitae mi sit amet feugiat.
-                </p>
-            </div>
-            <div class="column">
-                <img src="images/meelod_headshot.JPG" alt="Meelod" 
-                style="width:100%">
-                <h4>Asha Okora</h4>
-                <p>Software Engineer</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra 
-                    ullamcorper venenatis. Ut vitae mattis velit. Nam eu felis in dolor interdum 
-                    dapibus eget a sem. Vestibulum ut varius dui. Nunc eros diam, faucibus vitae lacinia ac, 
-                    blandit at mauris. Donec at suscipit metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-                    per inceptos himenaeos. Aenean massa lacus, venenatis quis bibendum ut, vehicula quis nulla.
-                     Proin cursus vitae mi sit amet feugiat.
-                </p>
-            </div>
+              </div>
         </div>
+        <div class="bio-container">
+
+              <div class="bio-b">
+                <h4 style="font-family:Ubuntu;font-size:40px;padding-bottom:5px;">Olufunke Ogunmefun</h4>
+                <p style="font-family:Ubuntu;font-size:15px;">Designer</p><br>
+                <p style="font-family:Source Sans Pro;font-size:15px;">Olufunke Ogunmefun is a fourth year Computer Science major and Psychology minor at the University of Calgary in Calgary, Alberta and an international student from Lagos, Nigeria. Olufunke is passionate about the field of User Experience Design, having come across it during quarantine and discovering that it was the career she had been looking for, and has slowly built a digital portfolio after taking the opportunity to engage in self-directed learning about the field and taking part in design hackathons, as well completing relevant course projects. She volunteers in a number of student organizations at UCalgary, including as the Vice President, Communications for the Nigerian Students’ Association and a volunteer writer for The Gauntlet, the university’s student-led newspaper. She enjoys learning new languages, and tutors beginner-level French part-time as a way to help other students improve their French language skills and to continually improve her own. After graduation, Olufunke aims to begin her UX Design career in a client-focused and inclusive environment.
+                </p>
+              </div>
+              <div class="profile-b">
+                <img src="NSA.jpg" alt="Olufunke Ogunmefun" style="width:300%;padding-left:20px;padding-top:20px;padding-bottom:20px;">
+              </div>
+        </div>
+
+        <div class="bio-container">
+              <div class="profile">
+                <img src="meelod_headshot.JPG" alt="Stephanie Organista" style="width:300%;padding-left:20px;padding-top:20px;padding-bottom:20px;">
+              </div>
+              <div class="bio">
+                <h4 style="font-family:Ubuntu;font-size:40px;padding-bottom:5px;color:white;">Stephanie Organista</h4>
+                <p style="font-family:Ubuntu;font-size:15px;">Software Engineer</p><br>
+                <p style="font-family:Source Sans Pro;font-size:15px;">As a first-generation indigenous Latina college student, Stephanie hopes to offer unique perspectives in the field of tech. She is currently pursuing a bachelor’s degree in computer science at the University of Houston. She has assumed leadership roles as Vice-President of Phi Theta Kappa Honor Society, through the Student Government Association as a Parliamentarian, and currently serves as SHPE Jr Chair for the Society of Hispanic Professional Engineers (SHPE). She is also an active member of the Society of Women Engineers.
+  	            She loves to be involved in projects that give back to her community. She has previously worked with a charity as a student mentor, where she tutored at-risk kids in low-income communities. Additionally, she is currently working on developing a youth STEM project to encourage Black/Latino high school students to pursue STEM careers.
+                </p>
+              </div>
+        </div>
+
+        <div class="bio-container">
+
+              <div class="bio-b">
+                <h4 style="font-family:Ubuntu;font-size:40px;padding-bottom:5px;">Olisehemeka Chukwuma</h4>
+                <p style="font-family:Ubuntu;font-size:15px;">Software Engineer</p><br>
+                <p style="font-family:Source Sans Pro;font-size:15px;">Olisehemeka Chukwuma is a 2nd year Software Engineering major at the Schulich School of Engineering. He is from Port-Harcourt, Nigeria and is currently an international student at the University of Calgary. He aspires to contribute to the education, health and finance industries through software development and is curious about Machine Learning and Cloud computing. He is also interested in animation and is eager to develop software to improve the current quality of film animation. He is currently the Vice President Internal of the Nigerian Students’ Association and the President of the Redeemed Christian Fellowship at the University of Calgary.
+                </p>
+              </div>
+              <div class="profile-b">
+                <img src="Oliseh's headshot.png" alt="Olisehemeka Chukwuma" style="width:300%;padding-left:20px;padding-top:20px;padding-bottom:20px;">
+              </div>
+        </div>
+
+        <div class="bio-container">
+              <div class="profile">
+                <img src="Asha Okora - Headshot 6.jpg" alt="Asha Okora" style="width:250%;padding-left:20px;padding-top:20px;padding-bottom:20px;">
+              </div>
+              <div class="bio">
+                <h4 style="font-family:Ubuntu;font-size:40px;color:white;">Asha Okora</h4>
+                <p style="font-family:Ubuntu;font-size:15px;">Software Engineer</p> <br>
+                <p style="font-family:Source Sans Pro;font-size:15px;">Asha Okora is a sophomore at Langston University studying Computer Science. She is from Edmond, Oklahoma but grew up in Guthrie, Oklahoma. She is a part of Langston University’s Edwin P. McCabe Honors Program and serves as an active member of the school’s Women of Purpose organization. She is also a UNCF STEM Scholar. She is most passionate about the intersection of technology and environmentalism and contributing to projects that center around ensuring the wellbeing and growth of her community. In her free time, she loves to write, do yoga, and read novels.
+                </p>
+              </div>
+          </div>
+        </div>
+
+
+
     </body>
+
+    <footer style = "background-color:white;">
+      <img src="ScrappyLogo.png" style="width:10%;margin-top:1px;margin-bottom:-30px;">
+      <p style="font-size:12px;font-family:Ubuntu;text-align:center;">Copyright (c) Scrappy </p>
+
+    </footer>
 </html>
