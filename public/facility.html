@@ -10,7 +10,9 @@
     <link href='https://fonts.googleapis.com/css?family=Otomanopee+One'rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro'rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="/node_modules/geofire/dist/geofire/geofire.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"async></script>
   </head>
   <body>
     <div>
@@ -23,9 +25,7 @@
                 <li><a href="index.html" style='font-family:Poppins'>Home</a></li>
                 <li><a href="about-us.html" style='font-family:Poppins'>Our Team</a></li>
                 <li><a href="facility.html" style='font-family:Poppins'>Facilities</a></li>
-                <li><a href="contact-us.html" style='font-family:Poppins'>Contact Us</a></li>
-                <pre id='data'></pre>
-                <script src="script.js"></script>
+                <li><a href="contact-us.html" style='font-family:Poppins'>Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -33,10 +33,10 @@
     </div>
     <script>
         window.onscroll = function() {myFunction()};
-
+  
         var header = document.getElementById("myHeader");
         var sticky = header.offsetTop;
-
+  
         function myFunction() {
           if (window.pageYOffset > sticky) {
             header.classList.add("sticky");
@@ -45,33 +45,3 @@
           }
         }
       </script>
-
-      <!-- The core Firebase JS SDK is always required and must be listed first -->
-      <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
-
-      <!-- TODO: Add SDKs for Firebase products that you want to use
-          https://firebase.google.com/docs/web/setup#available-libraries -->
-      <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
-
-      <script>
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        var firebaseConfig = {
-          apiKey: "AIzaSyDQC4B_wD3oMu3a_P9qEsXywReMMZ-C7tQ",
-          authDomain: "composting-app.firebaseapp.com",
-          databaseURL: "https://composting-app-default-rtdb.firebaseio.com",
-          projectId: "composting-app",
-          storageBucket: "composting-app.appspot.com",
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-      </script>
-
-      <script>
-      var ref = firebase.database().ref();
-      ref.on("value", function(snapshot){
-        output.innerHTML = JSON.stringify(snapshot.val(), null, 2);
-      });
-      </script>
-    </body>
