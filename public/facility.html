@@ -23,7 +23,7 @@
                 <li><a href="index.html" style='font-family:Poppins'>Home</a></li>
                 <li><a href="about-us.html" style='font-family:Poppins'>Our Team</a></li>
                 <li><a href="facility.html" style='font-family:Poppins'>Facilities</a></li>
-                <li><a href="contact-us.html" style='font-family:Poppins'>Contact</a></li>
+                <li><a href="contact-us.html" style='font-family:Poppins'>Contact Us</a></li>
                 <pre id='data'></pre>
                 <script src="script.js"></script>
             </ul>
@@ -33,10 +33,10 @@
     </div>
     <script>
         window.onscroll = function() {myFunction()};
-  
+
         var header = document.getElementById("myHeader");
         var sticky = header.offsetTop;
-  
+
         function myFunction() {
           if (window.pageYOffset > sticky) {
             header.classList.add("sticky");
@@ -45,7 +45,7 @@
           }
         }
       </script>
-        
+
       <!-- The core Firebase JS SDK is always required and must be listed first -->
       <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
 
@@ -69,9 +69,9 @@
       </script>
 
       <script>
-      var ref = firebase.database().ref();                           
+      var ref = firebase.database().ref();
       ref.on("value", function(snapshot){
         output.innerHTML = JSON.stringify(snapshot.val(), null, 2);
-      }); 
+      });
       </script>
     </body>
