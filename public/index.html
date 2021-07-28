@@ -5,34 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="style.css" rel="stylesheet">
+    <link href="proto.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Otomanopee+One' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <header id="myHeader">
-        <nav>
-            <ul class="nav_links">
+    <div>
+        <header id="myHeader">
+            <nav>
                 <div>
-                    <a href="index.html">
-                        <img src="images/ScrappyLogo+text(3).png" alt="Logo" style="width:30%;">
-                    </a>
+                    <ul class="nav_links">
+                        <li>
+                            <a href="index.html">
+                                <img src="images/ScrappyLogo+text(3).png" alt="Logo" style="width:20%; margin-top: 10px;
+                  margin-right: 120px; padding-top: -10px;">
+                            </a>
+                        </li>
+                        <li><a href="index.html" style='font-family:Poppins'>Home</a></li>
+                        <li><a href="about-us.html" style='font-family:Poppins'>Our Team</a></li>
+                        <li><a href="facility.html" style='font-family:Poppins'>Facilities</a></li>
+                        <li><a href="contact-us.html" style='font-family:Poppins'>Contact Us</a></li>
+                    </ul>
                 </div>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">Our Team</a></li>
-                <li><a href="facility.html">Facilities</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+
+
+        </header>
+    </div>
+
     <script>
         window.onscroll = function () { myFunction() };
 
@@ -51,11 +54,11 @@
 
     <div class="head">
         <!--
-          <img src="images/ScrappyLogo(2).png" alt = "Another Logo" style="width:15%;margin-bottom:-20px"><br><br>
+          <img src="ScrappyLogo(2).png" alt = "Another Logo" style="width:15%;margin-bottom:-20px"><br><br>
         -->
         <div>
             <video autoplay muted loop>
-                <source src="images/pexels-kelly-lacy-6160039_Trim4.mp4" type="video/mp4">
+                <source src="pexels-kelly-lacy-6160039_Trim4.mp4" type="video/mp4">
             </video>
         </div>
         <div class="overlay">
@@ -87,43 +90,126 @@
         </p>
         <br><br>
 
-        <p id="rcorners" style="color:white;font-size:30px;font-family: Source Sans Pro;"> Scrappy provides the following services: </p>
+        <p id="rcorners" style="color:white;font-size:20px;font-family: Source Sans Pro;"> Scrappy provides the following services: </p>
 
         <div class="row">
-            <div class="feature-row">
+            <div id="feature-row">
                 <div class="feature-column">
-                    <img src="images/map.svg" style="width:50%; margin-left: -400px; margin-right: auto;">
-                    <p style="font-size: 12px;padding-left:50px; margin-top:-35px; margin-left: -370px;">Location Services</p>
+                    <img src="map.svg" style="width:30%; margin-left:-600px;padding-left:10px">
+                    <p style="font-size: 12px;margin-left:-450px;margin-top:-25px;">Location Services</p>
                 </div>
                 <div class="feature-column">
-                    <img src="images/heart.svg" style="width:60%; margin-left:-260px;margin-right:auto;">
-                    <p style="font-size: 12px;padding-left:50px; margin-top:-35px; margin-left:-200px;">Personalization</p>
+                    <img src="heart.svg" style="width:35%; margin-left:-600px;padding-left:10px">
+                    <p style="font-size: 12px;margin-left:-450px;margin-top:-25px;">Personalization</p>
                 </div>
                 <div class="feature-column">
-                    <img src="images/friends.svg" style="width:30%; margin-left: auto; margin-right: auto;">
-                    <p style="font-size: 12px;padding-left:50px; margin-top:-35px;">Leaderboards</p>
+                    <img src="friends.svg" style="width:35%; margin-left:-600px;padding-left:10px;">
+                    <p style="font-size: 12px;margin-left:-450px;margin-top:-25px;">Leaderboards</p>
                 </div>
                 <div class="feature-column">
-                    <img src="images/chat.svg" style="width:30%; margin-left: auto; margin-right: auto;">
-                    <p style="font-size: 12px;padding-left:50px; margin-top:-35px;">Community</p>
+                    <img src="chat.svg" style="width:35%; margin-left:-650px; padding-left:10px">
+                    <p style="font-size: 12px;margin-left:-450px;margin-top:-25px;">Community</p>
                 </div>
             </div>
 
+        </div><br><br>
+
+        <div id="feature-row">
+            <div class="feature-column">
+                <img src="Home Screen.png" style="width:50%; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="feature-column">
+                <img src="Community.png" style="width:50%; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="feature-column">
+                <img src="Camera.png" style="width:50%; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="feature-column">
+                <img src="User Profile.png" style="width:50%; margin-left: auto; margin-right: auto;">
+            </div>
+
+        </div><br><br>
+
+
+        <div class="container-center-horizontal">
+            <div class="home-screen">
+                <div class="overlap-group">
+                    <div class="top-toolbar">
+                        <div class="overlap-group2">
+                            <div class="rectangle-2 border-1px-dove-gray"></div>
+                            <div class="status-bar-light">
+                                <div class="bars-status-bar-ight-status-bar">
+                                    <div class="bars-time-black">
+                                        <div class="overlap-group4">
+                                            <img class="background" src="background-1.svg" />
+                                            <div class="time helvetica-regular-normal-black-14px">9:41</div>
+                                        </div>
+                                    </div>
+                                    <div class="cellular-connection"></div>
+                                    <img class="shape" src="shape.svg" />
+                                    <div class="battery">
+                                        <div class="overlap-group3">
+                                            <img class="shape-1" src="shape-3.svg" />
+                                        </div>
+                                        <img class="shape-2" src="shape-2.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="user-profile.html">
+                                <div class="profile-picture border-1px-black">
+                                    <img class="nsa" src="NSA.jpg" />
+                                </div>
+                            </a>
+                            <a href="favorites.html"><img class="icon iconic-ios-heart" src="heart.svg" /></a>
+                        </div>
+                    </div>
+                    <img class="scrappy-logo" src="ScrappyLogo.png" />
+                </div>
+                <div class="flex-row">
+                    <h1 class="title">Welcome, Funke</h1>
+                    <div class="search-bar border-1px-dove-gray">
+                        <div class="text-3">Search for facilities</div>
+                        <img class="icon-awesome-search" src="search.svg" />
+                    </div>
+                </div>
+                <div class="flex-row-1">
+                    <div class="text-1 quicksand-normal-black-15px">Composting facilities near you</div>
+                    <div class="location-pill border-1px-dove-gray">
+                        <div class="text-2">Your location:<br />Maxwell, Indiana</div>
+                        <img class="icon-awesome-edit" src="edit.svg" />
+                    </div>
+                </div>
+                <img class="line-6" src="line-6.svg" /><a href="home-2.html"><img class="c1" src="c1.svg" /></a>
+                <div class="name quicksand-normal-black-12px">Maxwell Composting Plant</div>
+                <div class="address quicksand-normal-black-12px">5 km away</div>
+                <img class="line-1" src="line-1.svg" />
+                <img class="c2" src="c2.svg" />
+                <div class="comp-and-go">Comp And Go</div>
+                <div class="address">11 km away</div>
+                <img class="line-2" src="line-1.svg" /><img class="c3" src="c3.svg" />
+                <div class="Harrison Waste">Harrison Waste & Recycling</div>
+                <div class="address-2">30 km away</div>
+                <img class="line-3" src="line-1.svg" />
+                <div class="overlap-group1">
+                    <img class="c4" src="c4.svg" />
+                    <div class="bottom-toolbar">
+                        <div class="flex-col">
+                            <img class="icon-awesome-home" src="home.svg" />
+                            <img class="line-4" src="line-4.svg" />
+                        </div>
+                        <a href="camera.html">
+                            <div class="icon-iconic-ios-camera">
+                                <div class="overlap-group2-1">
+                                    <img class="path-18" src="path-18.svg" />
+                                    <img class="path-19" src="path-19.svg" />
+                                </div>
+                            </div>
+                        </a>
+                        <a href="user-profile.html"><img class="icon-awesome-user-friends" src="friends.svg" /></a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="row">
-            <div class="column">
-                <img src="images/Home Screen.png" style="width:30%; margin-left: auto; margin-right: auto;">
-                <img src="images/Community.png" style="width:30%; margin-left: auto; margin-right: auto;">
-            </div>
-            <div class="column">
-                <img src="images/Camera.png" style="width:30%; margin-left: auto; margin-right: auto;">
-                <img src="images/User Profile.png" style="width:30%; margin-left: auto; margin-right: auto;">
-            </div>
-
-        </div>
-
-
 
 
         <!--
@@ -133,14 +219,14 @@
 
     <div id="rcorners2">
         <p style="font-family:Ubuntu;font-size:40px;padding-left:5px;">View Facility Locations</p>
-        <a href="facility.html"><img style="padding-left:420px;margin-top:-80px;margin-left:15px;" src="images/arrow.svg"></a>
+        <a href="facility.html"><img style="padding-left:420px;margin-top:-80px;margin-left:15px;" src="arrow.svg"></a>
     </div>
 
 </body>
 
 <hr style="height:10px;width:100%;border-width: medium;">
 <footer style="background-color:white">
-    <img src="images/ScrappyLogo.png" style="width:10%;margin-top:1px;margin-bottom:-30px;">
+    <img src="ScrappyLogo.png" style="width:10%;margin-top:1px;margin-bottom:-30px;">
     <button class="button">Try for free</button>
     <p style="font-size:12px;font-family:Ubuntu;text-align:center;">Copyright (c) Scrappy </p>
 
