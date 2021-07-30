@@ -5,27 +5,26 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <header id="myHeader">
-    <nav>
-        <ul class="nav_links">
+    <header>
+        <nav>
             <div>
-                <a href="index.html">
-                    <img src="images/ScrappyLogo+text(3).png" alt="Logo" style="width:30%;">
-                </a>
+                <ul class="nav_links">
+                    <li>
+                        <a href="index.html">
+                            <img src="ScrappyLogo+text(3).png" alt="Logo" style="width:20%; margin-top: 10px;
+              margin-right: 120px; padding-top: -10px;">
+                        </a>
+                    </li>
+                    <li><a href="index.html" style='font-family:Ubuntu;'>Home</a></li>
+                    <li><a href="about-us.html" style='font-family:Ubuntu;'>Our Team</a></li>
+                    <li><a href="contact-us.html" style='font-family:Ubuntu;'>Contact Us</a></li>
+                </ul>
             </div>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">Our Team</a></li>
-            <li><a href="facility.html">Facilities</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
-</header>
-<script>
+        </nav>
+    </header>
+</div>
+
+ <!-- <script>
     window.onscroll = function () { myFunction() };
 
     var header = document.getElementById("myHeader");
@@ -38,19 +37,5 @@
             header.classList.remove("sticky");
         }
     }
-</script>
-  <script>
-    window.onscroll = function() {myFunction()};
-    
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
-    
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    }
-    </script>
+</script>   sticky header javascript-->
 </body>
